@@ -1,6 +1,6 @@
 <div align="center">
 
-![SunshineLauncher Logo](https://avatars.githubusercontent.com/u/78095377?s=200&v=4)
+![SunshineLauncher Logo](https://github.com/Sunshine-Client/Sunshine-Client-Android/blob/main/app/src/main/res/drawable-xhdpi/logo.png)
 
 # Sunshine Client
 
