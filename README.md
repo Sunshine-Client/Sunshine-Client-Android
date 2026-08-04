@@ -1,12 +1,12 @@
 <div align="center">
 
-![LeviLauncher Logo](https://avatars.githubusercontent.com/u/78095377?s=200&v=4)
+![SunshineLauncher Logo](https://avatars.githubusercontent.com/u/78095377?s=200&v=4)
 
-# LeviLauncher
+# Sunshine Client
 
 ![Banner](https://camo.githubusercontent.com/bd7bd77cb422a267057d9863095b239b096d4f46dc831a37b45867a9acfad697/68747470733a2f2f63617073756c652d72656e6465722e76657263656c2e6170702f6170693f747970653d576176696e6726636f6c6f723d74696d654772616469656e74266865696768743d33303026616e696d6174696f6e3d66616465496e2673656374696f6e3d68656164657226746578743d4c6576694d4326666f6e7453697a653d313230)
 
-**A lightweight Android launcher for Minecraft: Bedrock Edition**
+**A lightweight Android launcher for Minecraft: Bedrock Edition based on LeviLauncher**
 
 [![GitHub Release](https://img.shields.io/github/v/release/LiteLDev/LeviLaunchroid?style=flat-square&color=blue)](https://github.com/LiteLDev/LeviLaunchroid/releases)
 [![License: Apache 2.0](https://img.shields.io/github/license/LiteLDev/LeviLaunchroid)](https://github.com/LiteLDev/LeviLaunchroid/blob/main/LICENSE)
@@ -23,7 +23,7 @@
 
 LeviLauncher is a lightweight, open-source Android launcher specifically designed for legitimate players of Minecraft: Bedrock Edition (MCBE). It provides a flexible and user-friendly alternative to the standard Google Play installation, allowing you to manage multiple game versions and extend functionality with external modules.
 
-LeviLauncher enables you to import your official Minecraft APK and run it directly without requiring system installation. The launcher supports loading external native modules to enhance gameplay, provides robust multi-version management with complete isolation between installations, and includes built-in tools for managing resource packs and worlds. Whether you're looking to organize different game versions, test modifications, or optimize your gaming experience, LeviLauncher offers the flexibility you need.
+Sunshine Client enables you to import your official Minecraft APK and run it directly without requiring system installation. The launcher supports loading external native modules to enhance gameplay, provides robust multi-version management with complete isolation between installations, and includes built-in tools for managing resource packs and worlds. Whether you're looking to organize different game versions, test modifications, or optimize your gaming experience, Sunshine Client offers the flexibility you need.
 
 ### Key Features
 
@@ -37,7 +37,7 @@ LeviLauncher enables you to import your official Minecraft APK and run it direct
 
 ## System Requirements
 
-Before installing LeviLauncher, ensure your device meets the following minimum specifications:
+Before installing Sunshine Client, ensure your device meets the following minimum specifications:
 
 - **Operating System:** Android 9.0 (API 28) or higher
 - **Device Architecture:** ARM64 (v8a)
@@ -53,18 +53,18 @@ Before installing LeviLauncher, ensure your device meets the following minimum s
 
 ### Prerequisites
 
-Before proceeding with LeviLauncher installation, ensure that you have the official Minecraft Bedrock Edition app installed on your device from Google Play. This is required for LeviLauncher to function properly.
+Before proceeding with Sunshine Clients installation, ensure that you have the official Minecraft Bedrock Edition app installed on your device from Google Play. This is required for Sunshine Client to function properly.
 
 ### Installation Steps
 
-1. Visit the [Releases Page](https://github.com/LiteLDev/LeviLaunchroid/releases) and download the latest APK build
+1. Visit the [Releases Page](https://github.com/Sunshine-Client/Sunshine-Client-Android/releases) and download the latest APK build
 2. Open your device Settings and navigate to Security or Applications
 3. Enable "Unknown Sources" or "Allow installation from unknown sources" to permit APK installation
 4. Locate the downloaded APK file using your file manager and tap to install
 5. Grant the necessary permissions when prompted during installation
 6. Once installed, open LeviLauncher from your application drawer
 
-> **Important:** LeviLauncher requires a legitimate, licensed copy of Minecraft Bedrock Edition. Do not use this launcher with pirated or unauthorized versions of the game. Ensure your Minecraft license is valid and properly linked to your Microsoft account.
+> **Important:** Sunshine Client requires a legitimate, licensed copy of Minecraft Bedrock Edition. Do not use this launcher with pirated or unauthorized versions of the game. Ensure your Minecraft license is valid and properly linked to your Microsoft account.
 
 ---
 
