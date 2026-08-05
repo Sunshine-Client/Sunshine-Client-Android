@@ -359,8 +359,8 @@ public class StorageMigrationManager {
         String profileRelative = rest.substring(slash + 1);
         String profileRoot = LauncherStorage.MINECRAFT_DIR + "/" + profileId + "/";
 
-        if ("base.apk.levi".equals(profileRelative)) {
-            return profileRoot + "base.apk.levi";
+        if ("base.apk.sunshine".equals(profileRelative)) {
+            return profileRoot + "base.apk.sunshine";
         }
         if (profileRelative.startsWith("splits/")) {
             return profileRoot + profileRelative;
@@ -589,4 +589,4 @@ public class StorageMigrationManager {
             return Math.max(0, Math.min(100, (filePercent + bytePercent) / 2));
         }
     }
-}
+    }
