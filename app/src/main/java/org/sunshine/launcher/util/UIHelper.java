@@ -1,4 +1,4 @@
-package org.levimc.launcher.util;
+package org.sunshine.launcher.util;
 
 import android.content.Context;
 import android.widget.Toast;
