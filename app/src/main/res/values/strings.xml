@@ -58,7 +58,7 @@
 
 <!-- Permissions -->
 <string name="storage_permission_title">Storage Migration Permission</string>
-<string name="storage_permission_message">Please grant storage permission so Sunshine Client can copy data from the old games/org.levimc directory. This permission is only needed for the migration step.</string>
+<string name="storage_permission_message">Please grant storage permission so Sunshine Client can copy data from the old games/org.sunshine directory. This permission is only needed for the migration step.</string>
 <string name="grant_permission">Grant</string>
 <string name="cancel">Cancel</string>
 
@@ -159,7 +159,7 @@
 <string name="repair_finalizing">Finalizing repair…</string>
 
 <string name="storage_migration_title">Storage Migration Required</string>
-<string name="storage_migration_message">Sunshine Client must migrate data from games/org.levimc to %1$s before continuing.
+<string name="storage_migration_message">Sunshine Client must migrate data from games/org.sunshine to %1$s before continuing.
 
 This storage change is required for Google Play listing compliance. The old directory will be kept untouched, but it will no longer be used after migration.
 
@@ -179,7 +179,7 @@ Migration may take a while. You can leave the app in the background while it run
 <string name="storage_migration_completed_title">Migration Completed</string>
 <string name="storage_migration_completed_message">Migrated %1$d files (%2$s). %3$d files were already up to date.
 
-The old games/org.levimc directory was not deleted and is no longer used.</string>
+The old games/org.sunshine directory was not deleted and is no longer used.</string>
 <string name="storage_migration_partial_title">Migration Incomplete</string>
 <string name="storage_migration_partial_message">%1$d of %2$d files could not be copied. Migration must complete before Sunshine Client can continue.</string>
 <string name="storage_migration_failed_title">Migration Failed</string>
@@ -187,12 +187,12 @@ The old games/org.levimc directory was not deleted and is no longer used.</strin
 
 Migration must complete before Sunshine Client can continue.</string>
 <string name="migration_cleanup_title">Clean Historical Directory</string>
-<string name="migration_cleanup_desc">Only remove the old games/org.levimc directory after you have confirmed every instance launches normally and worlds, resource packs, behavior packs, and settings are not missing. Deleted historical data cannot be restored from this directory.</string>
+<string name="migration_cleanup_desc">Only remove the old games/org.sunshine directory after you have confirmed every instance launches normally and worlds, resource packs, behavior packs, and settings are not missing. Deleted historical data cannot be restored from this directory.</string>
 <string name="migration_cleanup_button">Clean Historical Directory</string>
 <string name="migration_cleanup_confirm_title">Clean Historical Directory?</string>
-<string name="migration_cleanup_confirm_message">This will permanently delete the old games/org.levimc directory.\n\nBefore continuing, make sure all instances launch normally and worlds, resource packs, behavior packs, and settings are not missing.</string>
+<string name="migration_cleanup_confirm_message">This will permanently delete the old games/org.sunshine directory.\n\nBefore continuing, make sure all instances launch normally and worlds, resource packs, behavior packs, and settings are not missing.</string>
 <string name="migration_cleanup_unavailable_not_completed">Storage migration has not completed yet. Finish migration before cleaning the old directory.</string>
-<string name="migration_cleanup_unavailable_missing">The old games/org.levimc directory was not found or has already been cleaned.</string>
+<string name="migration_cleanup_unavailable_missing">The old games/org.sunshine directory was not found or has already been cleaned.</string>
 <string name="migration_cleanup_ready">The old directory can be cleaned. Confirm all migrated instances are healthy before continuing.</string>
 <string name="migration_cleanup_success">Cleaned historical directory: %1$d files removed (%2$s).</string>
 <string name="migration_cleanup_failed">Failed to clean historical directory: %1$s</string>
@@ -225,7 +225,7 @@ Migration must complete before Sunshine Client can continue.</string>
 <string name="toast_delete_failed">Delete failed: %1$s</string>
 <string name="error_delete_builtin_version">Cannot delete built-in version</string>
 <string name="invalid_mod_file">Failed</string>
-<string name="invalid_mod_file_reason">Only .so files, .zip mod packages, or .levipack mod packages are allowed. The selected file is not a valid native mod import package.</string>
+<string name="invalid_mod_file_reason">Only .so files, .zip mod packages, or .sunshinepack mod packages are allowed. The selected file is not a valid native mod import package.</string>
 <string name="invalid_zip_mod_package_title">Invalid ZIP Mod Package</string>
 <string name="invalid_zip_mod_package_message">The ZIP mod package must contain manifest.json and a .so file.</string>
 <string name="error_versions">Error Versions</string>
@@ -254,7 +254,7 @@ Migration must complete before Sunshine Client can continue.</string>
 <string name="instance_delete_confirm_title">Delete Instance</string>
 <string name="instance_delete_confirm_msg">Are you sure you want to delete this instance? All data including worlds will be permanently removed.</string>
 <string name="instance_backup_title">Backup Instance</string>
-<string name="instance_backup_desc">Create a full backup of this instance in Download/LeviLauncher/Backups.</string>
+<string name="instance_backup_desc">Create a full backup of this instance in Download/SunshineClient/Backups.</string>
 <string name="instance_backup_button">Backup Instance</string>
 <string name="instance_backup_confirm_message">Create a full backup of this instance now? Exit Minecraft first if it is running to avoid changing files during backup.</string>
 <string name="instance_backup_in_progress">Backing up instance…</string>
