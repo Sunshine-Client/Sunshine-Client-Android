@@ -1,4 +1,4 @@
-package org.levimc.launcher.settings;
+package org.sunshine.launcher.settings;
 
 import android.content.Context;
 
