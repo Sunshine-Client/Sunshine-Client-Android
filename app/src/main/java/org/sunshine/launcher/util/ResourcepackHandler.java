@@ -1,4 +1,4 @@
-package org.levimc.launcher.util;
+package org.sunshine.launcher.util;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,12 +6,12 @@ import android.net.Uri;
 import android.widget.Button;
 import android.widget.ProgressBar;
 
-import org.levimc.launcher.R;
-import org.levimc.launcher.core.minecraft.MinecraftImportIntents;
-import org.levimc.launcher.core.minecraft.MinecraftLauncher;
-import org.levimc.launcher.core.versions.GameVersion;
-import org.levimc.launcher.core.versions.VersionManager;
-import org.levimc.launcher.ui.dialogs.CustomAlertDialog;
+import org.sunshine.launcher.R;
+import org.sunshine.launcher.core.minecraft.MinecraftImportIntents;
+import org.sunshine.launcher.core.minecraft.MinecraftLauncher;
+import org.sunshine.launcher.core.versions.GameVersion;
+import org.sunshine.launcher.core.versions.VersionManager;
+import org.sunshine.launcher.ui.dialogs.CustomAlertDialog;
 
 import java.util.concurrent.ExecutorService;
 
