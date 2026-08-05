@@ -1,11 +1,11 @@
-package org.levimc.launcher.core.curseforge;
+package org.sunshine.launcher.core.curseforge;
 
-import org.levimc.launcher.BuildConfig;
+import org.sunshine.launcher.BuildConfig;
 import com.google.gson.Gson;
 
-import org.levimc.launcher.core.curseforge.models.ContentSearchResponse;
-import org.levimc.launcher.core.curseforge.models.ModFilesResponse;
-import org.levimc.launcher.core.curseforge.models.StringResponse;
+import org.sunshine.launcher.core.curseforge.models.ContentSearchResponse;
+import org.sunshine.launcher.core.curseforge.models.ModFilesResponse;
+import org.sunshine.launcher.core.curseforge.models.StringResponse;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
