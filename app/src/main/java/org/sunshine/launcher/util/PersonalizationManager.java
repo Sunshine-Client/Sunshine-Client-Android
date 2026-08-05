@@ -1,4 +1,4 @@
-package org.levimc.launcher.util;
+package org.sunshine.launcher.util;
 
 import android.app.Activity;
 import android.content.Context;
@@ -29,7 +29,7 @@ import android.widget.TextView;
 import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 
-import org.levimc.launcher.R;
+import org.sunshine.launcher.R;
 
 import java.io.File;
 import java.io.FileOutputStream;
