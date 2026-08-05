@@ -1,9 +1,9 @@
-package org.levimc.launcher.util;
+package org.sunshine.launcher.util;
 
 import android.content.Context;
 import android.os.Environment;
 
-import org.levimc.launcher.settings.FeatureSettings;
+import org.sunshine.launcher.settings.FeatureSettings;
 
 import java.io.File;
 import java.io.IOException;
@@ -18,7 +18,7 @@ public final class LauncherStorage {
     private static final String KEY_SHARED_EXTERNAL_MODE = "shared_external_mode";
     static final String SHARED_MODE_LEGACY = "legacy";
     static final String SHARED_MODE_NEW = "new";
-    private static final String LEGACY_ROOT_PATH = "games/org.levimc";
+    private static final String LEGACY_ROOT_PATH = "games/org.sunshine";
     private static final String NO_MEDIA_FILE = ".nomedia";
     private static final String ANDROID_DIR = "Android";
     private static final String ANDROID_MEDIA_DIR = "media";
@@ -552,4 +552,4 @@ public final class LauncherStorage {
             return new LegacyCleanupResult(false, 0, 0L, errorMessage);
         }
     }
-}
+    }
