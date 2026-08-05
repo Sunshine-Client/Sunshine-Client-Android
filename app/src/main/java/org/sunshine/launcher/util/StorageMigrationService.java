@@ -1,4 +1,4 @@
-package org.levimc.launcher.util;
+package org.sunshine.launcher.util;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -16,8 +16,8 @@ import android.os.SystemClock;
 
 import androidx.annotation.Nullable;
 
-import org.levimc.launcher.R;
-import org.levimc.launcher.ui.activities.MainActivity;
+import org.sunshine.launcher.R;
+import org.sunshine.launcher.ui.activities.MainActivity;
 
 import java.text.DateFormat;
 import java.util.Date;
@@ -25,7 +25,7 @@ import java.util.Locale;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 public class StorageMigrationService extends Service {
-    public static final String ACTION_START = "org.levimc.launcher.action.START_STORAGE_MIGRATION";
+    public static final String ACTION_START = "org.sunshine.launcher.action.START_STORAGE_MIGRATION";
 
     private static final String CHANNEL_ID = "storage_migration";
     private static final int NOTIFICATION_ID = 4207;
