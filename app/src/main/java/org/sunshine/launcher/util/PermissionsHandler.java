@@ -1,4 +1,4 @@
-package org.levimc.launcher.util;
+package org.sunshine.launcher.util;
 
 import android.Manifest;
 import android.app.Activity;
@@ -14,8 +14,8 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
-import org.levimc.launcher.R;
-import org.levimc.launcher.ui.dialogs.CustomAlertDialog;
+import org.sunshine.launcher.R;
+import org.sunshine.launcher.ui.dialogs.CustomAlertDialog;
 
 public class PermissionsHandler {
 
