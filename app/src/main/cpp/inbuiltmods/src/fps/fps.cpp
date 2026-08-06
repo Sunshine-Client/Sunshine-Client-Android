@@ -6,7 +6,7 @@
 
 #include "pl/legacy/Gloss.h"
 
-#define LOG_TAG "LeviFPS"
+#define LOG_TAG "SunshineFPS"
 #define LOGI(...) __android_log_print(ANDROID_LOG_INFO, LOG_TAG, __VA_ARGS__)
 #define LOGE(...) __android_log_print(ANDROID_LOG_ERROR, LOG_TAG, __VA_ARGS__)
 
@@ -84,7 +84,7 @@ static bool hookEglSwapBuffers() {
 extern "C" {
 
 JNIEXPORT jboolean JNICALL
-Java_org_levimc_launcher_core_mods_inbuilt_nativemod_FpsMod_nativeInit(JNIEnv* env, jclass clazz) {
+Java_org_sunshine_launcher_core_mods_inbuilt_nativemod_FpsMod_nativeInit(JNIEnv* env, jclass clazz) {
     if (g_initialized) {
         return JNI_TRUE;
     }
@@ -105,12 +105,12 @@ Java_org_levimc_launcher_core_mods_inbuilt_nativemod_FpsMod_nativeInit(JNIEnv* e
 }
 
 JNIEXPORT jint JNICALL
-Java_org_levimc_launcher_core_mods_inbuilt_nativemod_FpsMod_nativeGetFps(JNIEnv* env, jclass clazz) {
+Java_org_sunshine_launcher_core_mods_inbuilt_nativemod_FpsMod_nativeGetFps(JNIEnv* env, jclass clazz) {
     return g_currentFps.load();
 }
 
 JNIEXPORT jboolean JNICALL
-Java_org_levimc_launcher_core_mods_inbuilt_nativemod_FpsMod_nativeIsInitialized(JNIEnv* env, jclass clazz) {
+Java_org_sunshine_launcher_core_mods_inbuilt_nativemod_FpsMod_nativeIsInitialized(JNIEnv* env, jclass clazz) {
     return g_initialized ? JNI_TRUE : JNI_FALSE;
 }
 
