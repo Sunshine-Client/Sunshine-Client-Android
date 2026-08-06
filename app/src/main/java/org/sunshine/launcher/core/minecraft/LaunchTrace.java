@@ -1,4 +1,4 @@
-package org.levimc.launcher.core.minecraft;
+package org.sunshine.launcher.core.minecraft;
 
 import android.content.Intent;
 import android.os.SystemClock;
@@ -8,8 +8,8 @@ import java.util.Locale;
 import java.util.UUID;
 
 public final class LaunchTrace {
-    public static final String EXTRA_SESSION_ID = "org.levimc.launcher.extra.LAUNCH_SESSION_ID";
-    public static final String EXTRA_STARTED_ELAPSED_MS = "org.levimc.launcher.extra.LAUNCH_STARTED_ELAPSED_MS";
+    public static final String EXTRA_SESSION_ID = "org.sunshine.launcher.extra.LAUNCH_SESSION_ID";
+    public static final String EXTRA_STARTED_ELAPSED_MS = "org.sunshine.launcher.extra.LAUNCH_STARTED_ELAPSED_MS";
 
     private static final String TAG = "MinecraftLaunchTrace";
 
