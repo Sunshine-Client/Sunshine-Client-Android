@@ -7,11 +7,11 @@
 ![Banner](https://github.com/Sunshine-Client/Sunshine-Client-Android/blob/main/app/src/main/res/drawable-xhdpi/logo_big.png)
 **A lightweight Android launcher for Minecraft: Bedrock Edition based on LeviLauncher**
 
-[![GitHub Release](https://img.shields.io/github/v/release/LiteLDev/LeviLaunchroid?style=flat-square&color=blue)](https://github.com/LiteLDev/LeviLaunchroid/releases)
-[![License: Apache 2.0](https://img.shields.io/github/license/LiteLDev/LeviLaunchroid)](https://github.com/LiteLDev/LeviLaunchroid/blob/main/LICENSE)
-[![Issues](https://img.shields.io/github/issues/LiteLDev/LeviLaunchroid?style=flat-square&color=red)](https://github.com/LiteLDev/LeviLaunchroid/issues)
-[![Stars](https://img.shields.io/github/stars/LiteLDev/LeviLaunchroid?style=flat-square&color=yellow)](https://github.com/LiteLDev/LeviLaunchroid)
-[![Downloads](https://img.shields.io/github/downloads/LiteLDev/LeviLaunchroid/total.svg)](https://github.com/LiteLDev/LeviLaunchroid/releases)
+[![GitHub Release](https://img.shields.io/github/v/release/Sunshine-Client/Sunshine-Client-Android?style=flat-square&color=blue)](https://github.com/Sunshine-Client/Sunshine-Client-Android/releases)
+[![License: Apache 2.0](https://img.shields.io/github/license/LiteLDev/LeviLaunchroid)](https://github.com/Sunshine-Client/Sunshine-Client-Android/blob/main/LICENSE)
+[![Issues](https://img.shields.io/github/issues/Sunshine-Client/Sunshine-Client-Android?style=flat-square&color=red)](https://github.com/Sunshine-Client/Sunshine-Client-Android/issues)
+[![Stars](https://img.shields.io/github/stars/Sunshine-Client/Sunshine-Client-Android?style=flat-square&color=yellow)](https://github.com/Sunshine-Client/Sunshine-Client-Android)
+[![Downloads](https://img.shields.io/github.com/downloads/Sunshine-Client/Sunshine-Client-Android/total.svg)](https://github.com/Sunshine-Client/Sunshine-Client-Android/releases)
 [![Android](https://img.shields.io/badge/Android-9.0%2B-green?style=flat-square&logo=android)](https://www.android.com/)
 
 </div>
