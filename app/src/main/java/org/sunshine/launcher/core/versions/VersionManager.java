@@ -1,4 +1,4 @@
-package org.levimc.launcher.core.versions;
+package org.sunshine.launcher.core.versions;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,15 +11,15 @@ import android.os.Looper;
 
 import androidx.annotation.NonNull;
 
-import org.levimc.launcher.R;
-import org.levimc.launcher.core.minecraft.MinecraftLauncher;
-import org.levimc.launcher.core.mods.ModManager;
-import org.levimc.launcher.ui.activities.MainActivity;
-import org.levimc.launcher.ui.dialogs.CustomAlertDialog;
-import org.levimc.launcher.ui.dialogs.LibsRepairDialog;
-import org.levimc.launcher.util.ApkUtils;
-import org.levimc.launcher.util.LauncherStorage;
-import org.levimc.launcher.util.NativeImageGuard;
+import org.sunshine.launcher.R;
+import org.sunshine.launcher.core.minecraft.MinecraftLauncher;
+import org.sunshine.launcher.core.mods.ModManager;
+import org.sunshine.launcher.ui.activities.MainActivity;
+import org.sunshine.launcher.ui.dialogs.CustomAlertDialog;
+import org.sunshine.launcher.ui.dialogs.LibsRepairDialog;
+import org.sunshine.launcher.util.ApkUtils;
+import org.sunshine.launcher.util.LauncherStorage;
+import org.sunshine.launcher.util.NativeImageGuard;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -209,7 +209,7 @@ public class VersionManager {
                     ApplicationInfo appInfo = context.getPackageManager().getApplicationInfo(version.packageName, 0);
                     apkFile = new File(appInfo.sourceDir);
                 } else {
-                    apkFile = new File(versionDir, "base.apk.levi");
+                    apkFile = new File(versionDir, "base.apk.sunshine");
                 }
 
                 String dataDirName = isExtractFalse ? version.directoryName : dirName;
@@ -228,7 +228,7 @@ public class VersionManager {
                 if (!isExtractFalse) {
                     File splitsDir = new File(versionDir, "splits");
                     if (splitsDir.exists() && splitsDir.isDirectory()) {
-                        File[] splitApks = splitsDir.listFiles((dir, name) -> name.endsWith(".apk.levi"));
+                        File[] splitApks = splitsDir.listFiles((dir, name) -> name.endsWith(".apk.sunshine"));
                         if (splitApks != null) {
                             for (File splitApk : splitApks) {
                                 apkFiles.add(splitApk);
@@ -385,7 +385,7 @@ public class VersionManager {
 
         if (dirs != null) {
             for (File dir : dirs) {
-                File apk = new File(dir, "base.apk.levi");
+                File apk = new File(dir, "base.apk.sunshine");
                 if (!apk.exists()) continue;
 
                 GameVersion gv = getGameVersion(dir);
@@ -463,7 +463,7 @@ public class VersionManager {
         File metadataDir = LauncherStorage.getProfileMetadataDir(context, dir.getName());
         VersionProfileMetadata metadata = loadMetadata(
                 metadataDir,
-                VersionProfileMetadataStore.Defaults.custom(dir.getName(), getApkVersionName(new File(dir, "base.apk.levi")))
+                VersionProfileMetadataStore.Defaults.custom(dir.getName(), getApkVersionName(new File(dir, "base.apk.sunshine")))
         );
         String directoryName = dir.getName();
         String expectedProfileId = LauncherStorage.sanitizeProfileId(directoryName);
@@ -880,4 +880,4 @@ public class VersionManager {
     private File getRuntimeLibDir(String dirName) {
         return MinecraftLauncher.getRuntimeLibDir(context, dirName);
     }
-}
+                    }
