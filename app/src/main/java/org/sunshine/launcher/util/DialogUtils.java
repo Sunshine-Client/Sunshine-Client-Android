@@ -1,7 +1,7 @@
-package org.levimc.launcher.util;
+package org.sunshine.launcher.util;
 
 import android.app.Activity;
-import org.levimc.launcher.ui.dialogs.LoadingDialog;
+import org.sunshine.launcher.ui.dialogs.LoadingDialog;
 
 public final class DialogUtils {
     private DialogUtils() {}
