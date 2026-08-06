@@ -1,4 +1,4 @@
-package org.levimc.launcher.core.mods;
+package org.sunshine.launcher.core.mods;
 
 import android.util.Log;
 
