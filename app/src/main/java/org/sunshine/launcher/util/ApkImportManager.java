@@ -1,4 +1,4 @@
-package org.levimc.launcher.util;
+package org.sunshine.launcher.util;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,12 +9,12 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import org.levimc.launcher.R;
-import org.levimc.launcher.core.versions.VersionManager;
-import org.levimc.launcher.ui.dialogs.ApkVersionConfirmDialog;
-import org.levimc.launcher.ui.dialogs.CustomAlertDialog;
-import org.levimc.launcher.ui.dialogs.InstallProgressDialog;
-import org.levimc.launcher.ui.views.MainViewModel;
+import org.sunshine.launcher.R;
+import org.sunshine.launcher.core.versions.VersionManager;
+import org.sunshine.launcher.ui.dialogs.ApkVersionConfirmDialog;
+import org.sunshine.launcher.ui.dialogs.CustomAlertDialog;
+import org.sunshine.launcher.ui.dialogs.InstallProgressDialog;
+import org.sunshine.launcher.ui.views.MainViewModel;
 
 import java.util.concurrent.Executors;
 
