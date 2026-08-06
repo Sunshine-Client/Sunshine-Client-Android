@@ -1,4 +1,4 @@
-package org.levimc.launcher.preloader;
+package org.sunshine.launcher.preloader;
 
 import android.view.MotionEvent;
 
