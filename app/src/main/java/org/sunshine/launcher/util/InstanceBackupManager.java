@@ -1,4 +1,4 @@
-package org.levimc.launcher.util;
+package org.sunshine.launcher.util;
 
 import android.content.ContentResolver;
 import android.content.ContentValues;
@@ -21,10 +21,10 @@ import android.util.Log;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import org.levimc.launcher.core.minecraft.MinecraftLauncher;
-import org.levimc.launcher.core.versions.GameVersion;
-import org.levimc.launcher.core.versions.VersionManager;
-import org.levimc.launcher.core.versions.VersionProfileMetadataStore;
+import org.sunshine.launcher.core.minecraft.MinecraftLauncher;
+import org.sunshine.launcher.core.versions.GameVersion;
+import org.sunshine.launcher.core.versions.VersionManager;
+import org.sunshine.launcher.core.versions.VersionProfileMetadataStore;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -51,11 +51,11 @@ import java.util.zip.ZipFile;
 import java.util.zip.ZipOutputStream;
 
 public class InstanceBackupManager {
-    public static final String BACKUP_EXTENSION = ".levibackup";
+    public static final String BACKUP_EXTENSION = ".sunshinebackup";
     public static final String ZIP_EXTENSION = ".zip";
 
     private static final String TAG = "InstanceBackupManager";
-    private static final String FORMAT_ID = "levilauncher_instance_backup";
+    private static final String FORMAT_ID = "sunshineclient_instance_backup";
     private static final int SCHEMA_VERSION = 1;
     private static final int BUFFER_SIZE = 131072;
     private static final String MANIFEST_ENTRY = "manifest.json";
@@ -64,7 +64,7 @@ public class InstanceBackupManager {
     private static final String RUNTIME_LIBS_PREFIX = "runtime_libs/";
     private static final String PACKAGE_PREFIX = "package/";
     private static final String DOWNLOAD_RELATIVE_PATH =
-            Environment.DIRECTORY_DOWNLOADS + "/LeviLauncher/Backups";
+            Environment.DIRECTORY_DOWNLOADS + "/SunshineClient/Backups";
     private static final Gson GSON = new GsonBuilder().serializeNulls().setPrettyPrinting().create();
 
     private final Context context;
@@ -309,7 +309,7 @@ public class InstanceBackupManager {
 
     private String buildBackupFileName(BackupManifest manifest) {
         String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.US).format(new Date(manifest.createdAt));
-        return "levilauncher_instance_"
+        return "sunshineclient_instance_"
                 + sanitizeFileName(firstNonEmpty(manifest.directoryName, manifest.instanceName, "instance"))
                 + "_"
                 + timestamp
@@ -340,7 +340,7 @@ public class InstanceBackupManager {
 
         File backupDir = new File(
                 Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS),
-                "LeviLauncher/Backups"
+                "SunshineClient/Backups"
         );
         if (!backupDir.exists() && !backupDir.mkdirs()) {
             throw new IOException("Failed to create backup directory: " + backupDir.getAbsolutePath());
@@ -714,7 +714,7 @@ public class InstanceBackupManager {
 
     private boolean shouldSkipInstalledProfileEntry(String relativePath) {
         String normalized = normalizeZipEntryName(relativePath);
-        return "base.apk.levi".equals(normalized) || normalized.startsWith("splits/");
+        return "base.apk.sunshine".equals(normalized) || normalized.startsWith("splits/");
     }
 
     private void extractBackupEntries(ZipFile zipFile, RestoreCallback callback, RestoreTargetResolver resolver) throws IOException {
@@ -897,12 +897,12 @@ public class InstanceBackupManager {
 
     private static boolean hasStrongBackupExtension(Context context, Uri uri) {
         if (uri == null) return false;
-        return hasLevibackupExtension(uri.getPath())
-                || hasLevibackupExtension(uri.getLastPathSegment())
-                || hasLevibackupExtension(resolveDisplayName(context, uri));
+        return hasSunshinebackupExtension(uri.getPath())
+                || hasSunshinebackupExtension(uri.getLastPathSegment())
+                || hasSunshinebackupExtension(resolveDisplayName(context, uri));
     }
 
-    private static boolean hasLevibackupExtension(String value) {
+    private static boolean hasSunshinebackupExtension(String value) {
         return value != null && value.toLowerCase(Locale.ROOT).endsWith(BACKUP_EXTENSION);
     }
 
@@ -1053,4 +1053,4 @@ public class InstanceBackupManager {
             this.relativePath = relativePath;
         }
     }
-}
+            }
