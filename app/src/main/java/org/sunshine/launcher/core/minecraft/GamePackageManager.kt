@@ -1,4 +1,4 @@
-package org.levimc.launcher.core.minecraft
+package org.sunshine.launcher.core.minecraft
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -8,10 +8,10 @@ import android.content.res.AssetManager
 import android.os.Build
 import android.os.SystemClock
 import android.util.Log
-import org.levimc.launcher.core.versions.GameVersion
-import org.levimc.launcher.util.LauncherStorage
-import org.levimc.launcher.util.NativeBridgeHelper
-import org.levimc.launcher.util.NativeImageGuard
+import org.sunshine.launcher.core.versions.GameVersion
+import org.sunshine.launcher.util.LauncherStorage
+import org.sunshine.launcher.util.NativeBridgeHelper
+import org.sunshine.launcher.util.NativeImageGuard
 import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
