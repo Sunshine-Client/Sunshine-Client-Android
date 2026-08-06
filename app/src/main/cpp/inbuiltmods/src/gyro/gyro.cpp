@@ -8,7 +8,7 @@
 #include "pl/memory/Hook.hpp"
 #include "pl/memory/Signature.hpp"
 
-#define LOG_TAG "LeviGyro"
+#define LOG_TAG "SunshineGyro"
 #define LOGI(...) __android_log_print(ANDROID_LOG_INFO, LOG_TAG, __VA_ARGS__)
 #define LOGE(...) __android_log_print(ANDROID_LOG_ERROR, LOG_TAG, __VA_ARGS__)
 
@@ -60,8 +60,8 @@ static void applyTurnDelta_hook(void *thisPtr, Vec2 *rotationDelta) {
 }
 
 static constexpr const char *APPLY_TURN_DELTA_SIG =
-    "?? ?? ?? D1 ?? ?? ?? FD ?? ?? ?? 6D ?? ?? ?? 6D ?? ?? ?? A9 ?? ?? ?? A9 "
-    "?? ?? ?? A9 ?? ?? ?? A9 ?? ?? ?? 91 ?? ?? ?? D5 F3 03 00 AA F4 03 01 AA";
+    "? ? ? D1 ? ? ? FD ? ? ? A9 ? ? ? A9 ? ? ? A9 ? ? ? A9 ? ? ? 91 ? ? ? D5 "
+    "F3 03 00 AA F4 03 01 AA ? ? ? F9 ? ? ? F8 ? ? ? F9 ? ? ? F9 ? ? ? F9";
 
 static uintptr_t g_applyTurnDeltaTarget = 0;
 
@@ -93,7 +93,7 @@ static bool findAndHookApplyTurnDelta() {
 extern "C" {
 
 JNIEXPORT void JNICALL
-Java_org_levimc_launcher_core_mods_inbuilt_nativemod_GyroMod_nativePreResolve(
+Java_org_sunshine_launcher_core_mods_inbuilt_nativemod_GyroMod_nativePreResolve(
     JNIEnv *env, jclass clazz) {
   if (g_applyTurnDeltaTarget == 0) {
     g_applyTurnDeltaTarget = pl::memory::resolveSignature(APPLY_TURN_DELTA_SIG, "libminecraftpe.so");
@@ -101,7 +101,7 @@ Java_org_levimc_launcher_core_mods_inbuilt_nativemod_GyroMod_nativePreResolve(
 }
 
 JNIEXPORT jboolean JNICALL
-Java_org_levimc_launcher_core_mods_inbuilt_nativemod_GyroMod_nativeInit(
+Java_org_sunshine_launcher_core_mods_inbuilt_nativemod_GyroMod_nativeInit(
     JNIEnv *env, jclass clazz) {
   if (g_initialized) {
     return JNI_TRUE;
@@ -120,7 +120,7 @@ Java_org_levimc_launcher_core_mods_inbuilt_nativemod_GyroMod_nativeInit(
 }
 
 JNIEXPORT void JNICALL
-Java_org_levimc_launcher_core_mods_inbuilt_nativemod_GyroMod_nativeSetEnabled(
+Java_org_sunshine_launcher_core_mods_inbuilt_nativemod_GyroMod_nativeSetEnabled(
     JNIEnv *env, jclass clazz, jboolean enabled) {
   g_enabled = enabled;
   if (!enabled) {
@@ -130,7 +130,7 @@ Java_org_levimc_launcher_core_mods_inbuilt_nativemod_GyroMod_nativeSetEnabled(
 }
 
 JNIEXPORT void JNICALL
-Java_org_levimc_launcher_core_mods_inbuilt_nativemod_GyroMod_nativeUpdateDelta(
+Java_org_sunshine_launcher_core_mods_inbuilt_nativemod_GyroMod_nativeUpdateDelta(
     JNIEnv *env, jclass clazz, jfloat deltaYaw, jfloat deltaPitch) {
   if (!g_initialized || !g_enabled)
     return;
@@ -146,43 +146,43 @@ Java_org_levimc_launcher_core_mods_inbuilt_nativemod_GyroMod_nativeUpdateDelta(
 }
 
 JNIEXPORT void JNICALL
-Java_org_levimc_launcher_core_mods_inbuilt_nativemod_GyroMod_nativeSetSensitivityX(
+Java_org_sunshine_launcher_core_mods_inbuilt_nativemod_GyroMod_nativeSetSensitivityX(
     JNIEnv *env, jclass clazz, jfloat sensitivity) {
   g_sensitivityX = sensitivity;
 }
 
 JNIEXPORT void JNICALL
-Java_org_levimc_launcher_core_mods_inbuilt_nativemod_GyroMod_nativeSetSensitivityY(
+Java_org_sunshine_launcher_core_mods_inbuilt_nativemod_GyroMod_nativeSetSensitivityY(
     JNIEnv *env, jclass clazz, jfloat sensitivity) {
   g_sensitivityY = sensitivity;
 }
 
 JNIEXPORT void JNICALL
-Java_org_levimc_launcher_core_mods_inbuilt_nativemod_GyroMod_nativeSetInvertX(
+Java_org_sunshine_launcher_core_mods_inbuilt_nativemod_GyroMod_nativeSetInvertX(
     JNIEnv *env, jclass clazz, jboolean invert) {
   g_invertX = invert;
 }
 
 JNIEXPORT void JNICALL
-Java_org_levimc_launcher_core_mods_inbuilt_nativemod_GyroMod_nativeSetInvertY(
+Java_org_sunshine_launcher_core_mods_inbuilt_nativemod_GyroMod_nativeSetInvertY(
     JNIEnv *env, jclass clazz, jboolean invert) {
   g_invertY = invert;
 }
 
 JNIEXPORT void JNICALL
-Java_org_levimc_launcher_core_mods_inbuilt_nativemod_GyroMod_nativeSetDeadzone(
+Java_org_sunshine_launcher_core_mods_inbuilt_nativemod_GyroMod_nativeSetDeadzone(
     JNIEnv *env, jclass clazz, jfloat deadzone) {
   g_deadzone = deadzone;
 }
 
 JNIEXPORT jboolean JNICALL
-Java_org_levimc_launcher_core_mods_inbuilt_nativemod_GyroMod_nativeIsInitialized(
+Java_org_sunshine_launcher_core_mods_inbuilt_nativemod_GyroMod_nativeIsInitialized(
     JNIEnv *env, jclass clazz) {
   return g_initialized ? JNI_TRUE : JNI_FALSE;
 }
 
 JNIEXPORT jboolean JNICALL
-Java_org_levimc_launcher_core_mods_inbuilt_nativemod_GyroMod_nativeIsEnabled(
+Java_org_sunshine_launcher_core_mods_inbuilt_nativemod_GyroMod_nativeIsEnabled(
     JNIEnv *env, jclass clazz) {
   return g_enabled ? JNI_TRUE : JNI_FALSE;
 }
