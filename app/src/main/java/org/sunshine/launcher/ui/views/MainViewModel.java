@@ -1,13 +1,13 @@
-package org.levimc.launcher.ui.views;
+package org.sunshine.launcher.ui.views;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModel;
 
-import org.levimc.launcher.core.mods.Mod;
-import org.levimc.launcher.core.mods.ModManager;
-import org.levimc.launcher.core.versions.GameVersion;
+import org.sunshine.launcher.core.mods.Mod;
+import org.sunshine.launcher.core.mods.ModManager;
+import org.sunshine.launcher.core.versions.GameVersion;
 
 import java.util.List;
 import java.util.concurrent.ExecutorService;
