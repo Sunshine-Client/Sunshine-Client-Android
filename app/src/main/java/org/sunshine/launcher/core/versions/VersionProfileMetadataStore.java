@@ -1,4 +1,4 @@
-package org.levimc.launcher.core.versions;
+package org.sunshine.launcher.core.versions;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -6,7 +6,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
-import org.levimc.launcher.util.LauncherStorage;
+import org.sunshine.launcher.util.LauncherStorage;
 
 import java.io.File;
 import java.io.FileInputStream;
