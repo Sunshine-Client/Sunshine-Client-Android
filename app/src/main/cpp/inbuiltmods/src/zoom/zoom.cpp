@@ -7,7 +7,7 @@
 #include "pl/memory/Hook.hpp"
 #include "pl/memory/Vtable.hpp"
 
-#define LOG_TAG "LeviZoom"
+#define LOG_TAG "SunshineZoom"
 #define LOGI(...) __android_log_print(ANDROID_LOG_INFO, LOG_TAG, __VA_ARGS__)
 #define LOGE(...) __android_log_print(ANDROID_LOG_ERROR, LOG_TAG, __VA_ARGS__)
 
@@ -67,7 +67,7 @@ static bool findAndHookCameraAPI() {
 extern "C" {
 
 JNIEXPORT jboolean JNICALL
-Java_org_levimc_launcher_core_mods_inbuilt_nativemod_ZoomMod_nativeInit(
+Java_org_sunshine_launcher_core_mods_inbuilt_nativemod_ZoomMod_nativeInit(
     JNIEnv *env, jclass clazz) {
   if (g_initialized) {
     return JNI_TRUE;
@@ -86,7 +86,7 @@ Java_org_levimc_launcher_core_mods_inbuilt_nativemod_ZoomMod_nativeInit(
 }
 
 JNIEXPORT void JNICALL
-Java_org_levimc_launcher_core_mods_inbuilt_nativemod_ZoomMod_nativeOnKeyDown(
+Java_org_sunshine_launcher_core_mods_inbuilt_nativemod_ZoomMod_nativeOnKeyDown(
     JNIEnv *env, jclass clazz) {
   if (!g_initialized || g_zoomKeyDown)
     return;
@@ -103,7 +103,7 @@ Java_org_levimc_launcher_core_mods_inbuilt_nativemod_ZoomMod_nativeOnKeyDown(
 }
 
 JNIEXPORT void JNICALL
-Java_org_levimc_launcher_core_mods_inbuilt_nativemod_ZoomMod_nativeOnKeyUp(
+Java_org_sunshine_launcher_core_mods_inbuilt_nativemod_ZoomMod_nativeOnKeyUp(
     JNIEnv *env, jclass clazz) {
   if (!g_initialized || !g_zoomKeyDown)
     return;
@@ -120,7 +120,7 @@ Java_org_levimc_launcher_core_mods_inbuilt_nativemod_ZoomMod_nativeOnKeyUp(
 }
 
 JNIEXPORT void JNICALL
-Java_org_levimc_launcher_core_mods_inbuilt_nativemod_ZoomMod_nativeOnScroll(
+Java_org_sunshine_launcher_core_mods_inbuilt_nativemod_ZoomMod_nativeOnScroll(
     JNIEnv *env, jclass clazz, jfloat delta) {
   if (!g_initialized || !g_zoomKeyDown)
     return;
@@ -159,32 +159,32 @@ Java_org_levimc_launcher_core_mods_inbuilt_nativemod_ZoomMod_nativeOnScroll(
 }
 
 JNIEXPORT void JNICALL
-Java_org_levimc_launcher_core_mods_inbuilt_nativemod_ZoomMod_nativeSetAnimated(
+Java_org_sunshine_launcher_core_mods_inbuilt_nativemod_ZoomMod_nativeSetAnimated(
     JNIEnv *env, jclass clazz, jboolean animated) {
   g_animated = animated;
 }
 
 JNIEXPORT jboolean JNICALL
-Java_org_levimc_launcher_core_mods_inbuilt_nativemod_ZoomMod_nativeIsZooming(
+Java_org_sunshine_launcher_core_mods_inbuilt_nativemod_ZoomMod_nativeIsZooming(
     JNIEnv *env, jclass clazz) {
   return g_zoomKeyDown ? JNI_TRUE : JNI_FALSE;
 }
 
 JNIEXPORT void JNICALL
-Java_org_levimc_launcher_core_mods_inbuilt_nativemod_ZoomMod_nativeSetZoomLevel(
+Java_org_sunshine_launcher_core_mods_inbuilt_nativemod_ZoomMod_nativeSetZoomLevel(
     JNIEnv *env, jclass clazz, jlong level) {
   g_zoomLevel = static_cast<uint64_t>(level);
 }
 
 JNIEXPORT void JNICALL
-Java_org_levimc_launcher_core_mods_inbuilt_nativemod_ZoomMod_nativeSetTransitionDuration(
+Java_org_sunshine_launcher_core_mods_inbuilt_nativemod_ZoomMod_nativeSetTransitionDuration(
     JNIEnv *env, jclass clazz, jint duration) {
   g_transitionDuration = duration;
   g_animated = duration > 0;
 }
 
 JNIEXPORT jlong JNICALL
-Java_org_levimc_launcher_core_mods_inbuilt_nativemod_ZoomMod_nativeGetZoomLevel(
+Java_org_sunshine_launcher_core_mods_inbuilt_nativemod_ZoomMod_nativeGetZoomLevel(
     JNIEnv *env, jclass clazz) {
   return static_cast<jlong>(g_zoomLevel);
 }
