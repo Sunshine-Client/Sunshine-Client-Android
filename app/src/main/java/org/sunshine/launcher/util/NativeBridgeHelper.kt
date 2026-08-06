@@ -1,4 +1,4 @@
-package org.levimc.launcher.util
+package org.sunshine.launcher.util
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -9,7 +9,7 @@ import org.levimc.launcher.core.minecraft.LauncherApplication
 import androidx.core.content.edit
 import android.widget.Toast
 import android.view.Gravity
-import org.levimc.launcher.R
+import org.sunshine.launcher.R
 
 object NativeBridgeHelper {
     @Volatile
