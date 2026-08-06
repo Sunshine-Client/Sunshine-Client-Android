@@ -1,4 +1,4 @@
-package org.levimc.launcher.core.versions;
+package org.sunshine.launcher.core.versions;
 
 import android.os.Parcel;
 import android.os.Parcelable;
