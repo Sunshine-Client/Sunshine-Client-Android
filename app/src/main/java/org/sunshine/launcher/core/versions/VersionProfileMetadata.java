@@ -1,4 +1,4 @@
-package org.levimc.launcher.core.versions;
+package org.sunshine.launcher.core.versions;
 
 public class VersionProfileMetadata {
     public static final int CURRENT_SCHEMA_VERSION = 1;
