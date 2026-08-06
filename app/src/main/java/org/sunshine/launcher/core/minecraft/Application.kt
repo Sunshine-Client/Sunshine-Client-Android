@@ -1,12 +1,12 @@
-package org.levimc.launcher.core.minecraft
+package org.sunshine.launcher.core.minecraft
 
 import android.app.Application
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.preference.PreferenceManager
-import org.levimc.launcher.core.crash.CrashReporter
-import org.levimc.launcher.settings.FeatureSettings
-import org.levimc.launcher.ui.dialogs.LogcatOverlayManager
+import org.sunshine.launcher.core.crash.CrashReporter
+import org.sunshine.launcher.settings.FeatureSettings
+import org.sunshine.launcher.ui.dialogs.LogcatOverlayManager
 
 class LauncherApplication : Application() {
 
