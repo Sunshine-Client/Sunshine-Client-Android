@@ -1,4 +1,4 @@
-package org.levimc.launcher.core.mods;
+package org.sunshine.launcher.core.mods;
 
 import android.os.FileObserver;
 import android.util.Log;
@@ -12,8 +12,8 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
 
-import org.levimc.launcher.core.versions.GameVersion;
-import org.levimc.launcher.core.mods.config.ModConfigManager;
+import org.sunshine.launcher.core.versions.GameVersion;
+import org.sunshine.launcher.core.mods.config.ModConfigManager;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -821,4 +821,4 @@ public class ModManager {
         }
         return fileName.substring(0, dotIndex);
     }
-}
+            }
