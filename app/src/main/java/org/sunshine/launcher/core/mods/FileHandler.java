@@ -1,4 +1,4 @@
-package org.levimc.launcher.core.mods;
+package org.sunshine.launcher.core.mods;
 
 import android.content.ClipData;
 import android.content.Context;
@@ -16,11 +16,11 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
-import org.levimc.launcher.R;
-import org.levimc.launcher.core.versions.GameVersion;
-import org.levimc.launcher.core.versions.VersionManager;
-import org.levimc.launcher.ui.dialogs.CustomAlertDialog;
-import org.levimc.launcher.ui.views.MainViewModel;
+import org.sunshine.launcher.R;
+import org.sunshine.launcher.core.versions.GameVersion;
+import org.sunshine.launcher.core.versions.VersionManager;
+import org.sunshine.launcher.ui.dialogs.CustomAlertDialog;
+import org.sunshine.launcher.ui.views.MainViewModel;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -183,7 +183,7 @@ public class FileHandler {
         }
 
         String lowerName = fileName.toLowerCase(Locale.ROOT);
-        return lowerName.endsWith(".zip") || lowerName.endsWith(".levipack");
+        return lowerName.endsWith(".zip") || lowerName.endsWith(".sunshinepack");
     }
 
     private boolean isZipModPackageFile(Uri uri, String fileName) {
@@ -1373,4 +1373,4 @@ public class FileHandler {
     private boolean createDirectoryIfNeeded(File dir) {
         return dir.exists() || dir.mkdirs();
     }
-}
+            }
