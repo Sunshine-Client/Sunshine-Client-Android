@@ -1,4 +1,4 @@
-package org.levimc.launcher.preloader;
+package org.sunshine.launcher.preloader;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -8,8 +8,8 @@ import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.levimc.launcher.util.JsonIOUtils;
-import org.levimc.launcher.util.LauncherStorage;
+import org.sunshine.launcher.util.JsonIOUtils;
+import org.sunshine.launcher.util.LauncherStorage;
 
 import java.io.File;
 import java.io.FileOutputStream;
