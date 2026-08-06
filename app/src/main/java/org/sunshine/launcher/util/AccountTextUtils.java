@@ -1,10 +1,10 @@
-package org.levimc.launcher.util;
+package org.sunshine.launcher.util;
 
 import android.content.Context;
 import android.graphics.Bitmap;
 
-import org.levimc.launcher.R;
-import org.levimc.launcher.core.auth.MsftAccountStore;
+import org.sunshine.launcher.R;
+import org.sunshine.launcher.core.auth.MsftAccountStore;
 
 import java.util.concurrent.ConcurrentHashMap;
 
