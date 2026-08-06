@@ -1,4 +1,4 @@
-package org.levimc.launcher.util;
+package org.sunshine.launcher.util;
 
 import android.app.Activity;
 import android.content.SharedPreferences;
@@ -8,7 +8,7 @@ import android.widget.PopupMenu;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.os.LocaleListCompat;
 
-import org.levimc.launcher.R;
+import org.sunshine.launcher.R;
 
 import java.util.Locale;
 
