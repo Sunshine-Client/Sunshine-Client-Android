@@ -6,7 +6,7 @@
 #include "pl/memory/Hook.hpp"
 #include "pl/memory/Vtable.hpp"
 
-#define LOG_TAG "LeviSnaplook"
+#define LOG_TAG "SunshineSnaplook"
 #define LOGI(...) __android_log_print(ANDROID_LOG_INFO, LOG_TAG, __VA_ARGS__)
 #define LOGE(...) __android_log_print(ANDROID_LOG_ERROR, LOG_TAG, __VA_ARGS__)
 
@@ -55,7 +55,7 @@ static bool findAndHookVanillaCameraAPI() {
 extern "C" {
 
 JNIEXPORT jboolean JNICALL
-Java_org_levimc_launcher_core_mods_inbuilt_nativemod_SnaplookMod_nativeInit(
+Java_org_sunshine_launcher_core_mods_inbuilt_nativemod_SnaplookMod_nativeInit(
     JNIEnv *env, jclass clazz) {
   if (g_initialized) {
     return JNI_TRUE;
@@ -74,7 +74,7 @@ Java_org_levimc_launcher_core_mods_inbuilt_nativemod_SnaplookMod_nativeInit(
 }
 
 JNIEXPORT void JNICALL
-Java_org_levimc_launcher_core_mods_inbuilt_nativemod_SnaplookMod_nativeOnKeyDown(
+Java_org_sunshine_launcher_core_mods_inbuilt_nativemod_SnaplookMod_nativeOnKeyDown(
     JNIEnv *env, jclass clazz) {
   if (!g_initialized)
     return;
@@ -82,7 +82,7 @@ Java_org_levimc_launcher_core_mods_inbuilt_nativemod_SnaplookMod_nativeOnKeyDown
 }
 
 JNIEXPORT void JNICALL
-Java_org_levimc_launcher_core_mods_inbuilt_nativemod_SnaplookMod_nativeOnKeyUp(
+Java_org_sunshine_launcher_core_mods_inbuilt_nativemod_SnaplookMod_nativeOnKeyUp(
     JNIEnv *env, jclass clazz) {
   if (!g_initialized)
     return;
@@ -90,13 +90,13 @@ Java_org_levimc_launcher_core_mods_inbuilt_nativemod_SnaplookMod_nativeOnKeyUp(
 }
 
 JNIEXPORT jboolean JNICALL
-Java_org_levimc_launcher_core_mods_inbuilt_nativemod_SnaplookMod_nativeIsActive(
+Java_org_sunshine_launcher_core_mods_inbuilt_nativemod_SnaplookMod_nativeIsActive(
     JNIEnv *env, jclass clazz) {
   return g_snaplookActive ? JNI_TRUE : JNI_FALSE;
 }
 
 JNIEXPORT jboolean JNICALL
-Java_org_levimc_launcher_core_mods_inbuilt_nativemod_SnaplookMod_nativeIsInitialized(
+Java_org_sunshine_launcher_core_mods_inbuilt_nativemod_SnaplookMod_nativeIsInitialized(
     JNIEnv *env, jclass clazz) {
   return g_initialized ? JNI_TRUE : JNI_FALSE;
 }
